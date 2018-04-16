@@ -3,4 +3,14 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="welcome">Bem vindo!</string>
+    <string name="petname">Snow</string>
+    <string name="hist">Histórico</string>
+    <string name="agenda">Agenda</string>
+    <string name="add">Adicionar</string>
+    <string name="reminder1">30/04/2018 - Vacina</string>
+    <string name="reminder2">07/05/2018 - Passeio</string>
+    <string name="next">Próximos</string>
+    <string name="before">Anteriores</string>
+    <string name="birthday">30/12/2017 - Aniversário Snow</string>
 </resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/hist"
+        android:title="@string/hist"
+        android:icon="@drawable/ic_timeline" />
+    <item android:id="@+id/add"
+        android:title="@string/add"
+        android:icon="@drawable/ic_add" />
+    <item android:id="@+id/events"
+        android:title="@string/agenda"
+        android:icon="@drawable/ic_calendar" />
+</menu>
