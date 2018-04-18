@@ -13,4 +13,11 @@
     <string name="next">Próximos</string>
     <string name="before">Anteriores</string>
     <string name="birthday">30/12/2017 - Aniversário Snow</string>
+    <string name="haveaccount">Já possui uma conta? Login</string>
+    <string name="noaccount">Ainda não possui uma conta? Crie uma agora!</string>
+    <string name="createaccount">Criar conta</string>
+    <string name="email">Senha</string>
+    <string name="name">Nome</string>
+    <string name="senha">Senha</string>
+    <string name="login">Login</string>
 </resources>
