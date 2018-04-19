@@ -20,4 +20,6 @@
     <string name="name">Nome</string>
     <string name="senha">Senha</string>
     <string name="login">Login</string>
+    <string name="addevent">Adicionar Evento</string>
+    <string name="addpet">Adicionar Pet</string>
 </resources>
