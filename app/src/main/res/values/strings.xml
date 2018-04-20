@@ -22,4 +22,10 @@
     <string name="login">Login</string>
     <string name="addevent">Adicionar Evento</string>
     <string name="addpet">Adicionar Pet</string>
+    <string name="inputeventname">Nome do evento</string>
+    <string name="inputeventdesc">Descrição</string>
+    <string name="inputeventlocalname">Local</string>
+    <string name="inputeventdate">Data</string>
+    <string name="inputpetname">Nome do pet</string>
+    <string name="inputpetage">Idade do pet</string>
 </resources>
