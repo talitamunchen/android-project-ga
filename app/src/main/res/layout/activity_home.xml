@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:background="@color/primary_dark"
         android:orientation="vertical"
         android:paddingTop="15dp">
@@ -34,7 +34,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="435dp"
+        android:layout_height="385dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -55,6 +55,7 @@
                 android:textSize="20dp" />
 
             <LinearLayout
+                android:id="@+id/petOne"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -78,6 +79,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/petTwo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -103,7 +105,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btn_addevent2"
+            android:id="@+id/btn_addpet"
             android:layout_width="150dp"
             android:layout_height="54dp"
             android:layout_gravity="center"

@@ -31,7 +31,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="305dp"
+        android:layout_height="385dp"
         android:orientation="vertical">
 
         <TextView
@@ -75,20 +75,37 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@color/primary_dark" >
 
-        <android.support.design.widget.BottomNavigationView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/primary_dark"
-            app:menu="@menu/activity_menu"
-            app:itemTextColor="@color/white"
-            app:itemIconTint="@color/black" />
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="4dp">
 
-    </LinearLayout>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Voltar" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
 
 
 </LinearLayout>

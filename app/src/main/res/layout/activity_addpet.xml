@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="150dp"
         android:background="@color/primary_dark"
         android:orientation="vertical">
 
@@ -29,100 +29,126 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="305dp"
+        android:layout_height="355dp"
         android:layout_marginTop="20dp"
         android:orientation="vertical">
 
-        <TableLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:shrinkColumns="*"
-            android:stretchColumns="*">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-            <TableRow
+            <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center_horizontal">
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
 
-                <android.support.design.widget.TextInputLayout
+                <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginTop="8dp">
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
 
-                    <EditText
-                        android:id="@+id/input_petname"
-                        android:layout_width="350dp"
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/inputpetname"
-                        android:inputType="text" />
-                </android.support.design.widget.TextInputLayout>
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal">
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginTop="8dp">
-
-                    <EditText
-                        android:id="@+id/input_petage"
-                        android:layout_width="350dp"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/inputpetage"
-                        android:inputType="text" />
-                </android.support.design.widget.TextInputLayout>
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal">
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginTop="8dp">
-
-                    <Button
-                        android:id="@+id/btn_addpet2"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
-                        android:layout_marginBottom="34dp"
-                        android:layout_marginTop="24dp"
-                        android:padding="12dp"
                         android:layout_gravity="center"
-                        android:text="@string/add" />
-                </android.support.design.widget.TextInputLayout>
-            </TableRow>
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp">
 
-        </TableLayout>
+                        <EditText
+                            android:id="@+id/input_petname"
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/inputpetname"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp">
+
+                        <EditText
+                            android:id="@+id/input_petage"
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/inputpetage"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp">
+
+
+                    </android.support.design.widget.TextInputLayout>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_addpet2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="34dp"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:layout_gravity="center"
+            android:text="@string/add" />
 
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@color/primary_dark" >
 
-        <android.support.design.widget.BottomNavigationView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/primary_dark"
-            app:itemIconTint="@color/black"
-            app:itemTextColor="@color/white"
-            app:menu="@menu/activity_menu" />
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp">
 
-    </LinearLayout>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Voltar" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
 
 
 </LinearLayout>

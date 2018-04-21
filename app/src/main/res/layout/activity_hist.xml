@@ -31,85 +31,140 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="305dp"
+        android:layout_height="385dp"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="@string/next"
-            android:layout_span="3"
-            android:layout_marginTop="5dp"
-            android:padding="10dp"
-            android:gravity="center"
-            android:textColor="@color/red"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:shrinkColumns="*"
-            android:stretchColumns="*">
-
-            <TableRow
-                android:layout_height="match_parent"
+            <TextView
                 android:layout_width="match_parent"
-                android:gravity="center_horizontal">
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/ic_reminder" />
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@string/next"
+                android:layout_span="3"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="@color/red"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:text="@string/reminder1"
-                    android:layout_span="3"
-                    android:padding="18dip"
-                    android:textColor="#000"/>
-            </TableRow>
-
-            <TableRow
-                android:layout_height="match_parent"
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_marginTop="26dp"
-                android:gravity="center_horizontal">
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/ic_calendar" />
+                android:layout_height="match_parent"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
 
-                <TextView
+                <TableRow
+                    android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:text="@string/reminder2"
-                    android:layout_span="3"
-                    android:padding="18dip"
-                    android:textColor="#000"/>
-            </TableRow>
+                    android:gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_reminder" />
 
-        </TableLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/reminder1"
+                        android:layout_span="3"
+                        android:padding="18dip"
+                        android:textColor="#000"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="26dp"
+                    android:gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_calendar" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="@string/reminder2"
+                        android:layout_span="3"
+                        android:padding="18dip"
+                        android:textColor="#000"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_addevent2"
+            android:layout_width="150dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:padding="12dp"
+            android:text="Adicionar evento" />
 
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@color/primary_dark" >
 
-        <android.support.design.widget.BottomNavigationView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/primary_dark"
-            app:menu="@menu/activity_menu"
-            app:itemTextColor="@color/white"
-            app:itemIconTint="@color/black" />
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="4dp">
 
-    </LinearLayout>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Voltar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_hist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="4dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_timeline" />
+
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Histórico" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
 
 
 </LinearLayout>
