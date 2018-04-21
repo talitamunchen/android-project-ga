@@ -38,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
                 String userName = txUserName.getText().toString();
                 String userPass = txUserPass.getText().toString();
                 if (userName.equals(SAMPLE_USER) && userPass.equals(SAMPLE_PASS)){
-                    Intent intent = new Intent(LoginActivity.this, HistActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                     Bundle params = new Bundle();
                     params.putString("name", userName);
                     intent.putExtras(params);

@@ -11,6 +11,8 @@
     <string name="reminder1">30/04/2018 - Vacina</string>
     <string name="reminder2">07/05/2018 - Passeio</string>
     <string name="next">Próximos</string>
+    <string name="back">Voltar</string>
+    <string name="logout">Sair</string>
     <string name="before">Anteriores</string>
     <string name="birthday">30/12/2017 - Aniversário Snow</string>
     <string name="haveaccount">Já possui uma conta? Login</string>
