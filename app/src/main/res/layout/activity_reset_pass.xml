@@ -31,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:hint="Email" />
+                android:hint="@string/email" />
         </android.support.design.widget.TextInputLayout>
 
         <!-- Senha -->
@@ -55,13 +55,13 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
             android:padding="12dp"
-            android:text="Resetar senha"/>
+            android:text="@string/reset"/>
 
         <TextView android:id="@+id/link_login"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            android:text="Retornar para Login"
+            android:text="@string/backlogin"
             android:gravity="center"
             android:textSize="16dip"/>
 

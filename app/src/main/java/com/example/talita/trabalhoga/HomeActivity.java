@@ -3,6 +3,7 @@ package com.example.talita.trabalhoga;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -20,10 +21,13 @@ public class HomeActivity extends AppCompatActivity {
     private Button btnAddPet;
     private String userName;
 
+    static final String TAG = HomeActivity.class.getName();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        Log.v(TAG, "Passou no OnCreate");
         Bundle args = getIntent().getExtras();
         userName = args.getString("name");
 
@@ -33,8 +37,8 @@ public class HomeActivity extends AppCompatActivity {
         this.btnAddPet = findViewById(R.id.btn_addpet);
 
         this.btnLogout.setOnClickListener(onClickLogout());
-        this.petOne.setOnClickListener(onClickPet());
-        this.petTwo.setOnClickListener(onClickPet());
+        this.petOne.setOnClickListener(onClickPetOne());
+        this.petTwo.setOnClickListener(onClickPetTwo());
         this.btnAddPet.setOnClickListener(onClicklAddPet());
     }
 
@@ -47,11 +51,12 @@ public class HomeActivity extends AppCompatActivity {
                 params.putString("name", userName);
                 intent.putExtras(params);
                 startActivity(intent);
+                Log.v(TAG, "Clicou em adicionar pet");
             }
         };
     }
 
-    private View.OnClickListener onClickPet() {
+    private View.OnClickListener onClickPetOne() {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,6 +65,21 @@ public class HomeActivity extends AppCompatActivity {
                 params.putString("name", userName);
                 intent.putExtras(params);
                 startActivity(intent);
+                Log.v(TAG, "Clicou em no pet um");
+            }
+        };
+    }
+
+    private View.OnClickListener onClickPetTwo() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, HistActivity.class);
+                Bundle params = new Bundle();
+                params.putString("name", userName);
+                intent.putExtras(params);
+                startActivity(intent);
+                Log.v(TAG, "Clicou no pet dois");
             }
         };
     }
@@ -71,6 +91,7 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
             Toast.makeText(HomeActivity.this, "Deslogado com sucesso!", Toast.LENGTH_LONG).show();
             startActivity(intent);
+            Log.v(TAG, "Clicou em sair");
             }
         };
     }

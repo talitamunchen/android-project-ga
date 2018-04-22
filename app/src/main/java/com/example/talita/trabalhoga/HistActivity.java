@@ -3,6 +3,7 @@ package com.example.talita.trabalhoga;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -14,10 +15,13 @@ public class HistActivity extends AppCompatActivity {
     private Button btnAddEvent;
     private String userName;
 
+    static final String TAG = HistActivity.class.getName();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hist);
+        Log.v(TAG, "Passou no onCreate");
 
         Bundle args = getIntent().getExtras();
         userName = args.getString("name");
@@ -40,6 +44,7 @@ public class HistActivity extends AppCompatActivity {
                 params.putString("name", userName);
                 intent.putExtras(params);
                 startActivity(intent);
+                Log.v(TAG, "Clicou em adicionar evento");
             }
         };
     }
@@ -53,6 +58,7 @@ public class HistActivity extends AppCompatActivity {
                 params.putString("name", userName);
                 intent.putExtras(params);
                 startActivity(intent);
+                Log.v(TAG, "Clicou no histórico");
             }
         };
     }
@@ -66,6 +72,7 @@ public class HistActivity extends AppCompatActivity {
                 params.putString("name", userName);
                 intent.putExtras(params);
                 startActivity(intent);
+                Log.v(TAG, "Clicou em voltar");
             }
         };
     }

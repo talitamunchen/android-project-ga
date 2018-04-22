@@ -3,6 +3,7 @@ package com.example.talita.trabalhoga;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -15,6 +16,8 @@ public class AddpetActivity extends AppCompatActivity {
     private Button btnAddPet;
     private String userName;
 
+    static final String TAG = AddpetActivity.class.getName();
+
     private TextView txNamePet;
     private TextView txAgePet;
 
@@ -22,6 +25,7 @@ public class AddpetActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addpet);
+        Log.v(TAG, "Passou no OnCreate");
         Bundle args = getIntent().getExtras();
         userName = args.getString("name");
 
@@ -42,8 +46,10 @@ public class AddpetActivity extends AppCompatActivity {
 
                 if (txNamePet.getText().toString().trim().length() == 0){
                     Toast.makeText(AddpetActivity.this, "Nome inválido!", Toast.LENGTH_LONG).show();
+                    Log.v(TAG, "Não conseguiu adicionar o pet: nome inválido");
                 }else if(txAgePet.getText().toString().trim().length() == 0){
                     Toast.makeText(AddpetActivity.this, "Idade inválido!", Toast.LENGTH_LONG).show();
+                    Log.v(TAG, "Não conseguiu adicionar o pet: idade inválida");
                 }else{
                     Intent intent = new Intent(AddpetActivity.this, HomeActivity.class);
                     Bundle params = new Bundle();
@@ -51,6 +57,7 @@ public class AddpetActivity extends AppCompatActivity {
                     intent.putExtras(params);
                     Toast.makeText(AddpetActivity.this, "Pet adicionado com sucesso!", Toast.LENGTH_LONG).show();
                     startActivity(intent);
+                    Log.v(TAG, "Pet adicionado");
                 }
             }
         };
@@ -65,6 +72,7 @@ public class AddpetActivity extends AppCompatActivity {
                 params.putString("name", userName);
                 intent.putExtras(params);
                 startActivity(intent);
+                Log.v(TAG, "Clicou em voltar");
             }
         };
     }

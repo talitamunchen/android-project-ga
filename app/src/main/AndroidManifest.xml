@@ -16,16 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HistActivity">
-
-        </activity>
         <activity android:name=".SchedActivity">
 
         </activity>
         <activity android:name=".ResetPassActivity">
 
         </activity>
-        <activity android:name=".AddActivity">
+        <activity android:name=".HistActivity">
 
         </activity>
         <activity android:name=".AddpetActivity">

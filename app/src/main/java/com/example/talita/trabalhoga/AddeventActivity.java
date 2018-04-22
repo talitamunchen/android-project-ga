@@ -3,6 +3,7 @@ package com.example.talita.trabalhoga;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -16,10 +17,13 @@ public class AddeventActivity extends AppCompatActivity {
     private String userName;
     private TextView txNameEvent;
 
+    static final String TAG = AddeventActivity.class.getName();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addevent);
+        Log.v(TAG, "Passou no OnCreate");
 
         Bundle args = getIntent().getExtras();
         userName = args.getString("name");
@@ -39,6 +43,7 @@ public class AddeventActivity extends AppCompatActivity {
 
                 if (txNameEvent.getText().toString().trim().length() == 0){
                     Toast.makeText(AddeventActivity.this, "Nome inválido!", Toast.LENGTH_LONG).show();
+                    Log.v(TAG, "Não conseguiu adicionar evento: nome inválido");
                 }else{
                     Intent intent = new Intent(AddeventActivity.this, HistActivity.class);
                     Bundle params = new Bundle();
@@ -46,6 +51,7 @@ public class AddeventActivity extends AppCompatActivity {
                     intent.putExtras(params);
                     Toast.makeText(AddeventActivity.this, "Evento adicionado com sucesso!", Toast.LENGTH_LONG).show();
                     startActivity(intent);
+                    Log.v(TAG, "Adicionou evento");
                 }
 
             }
@@ -61,6 +67,7 @@ public class AddeventActivity extends AppCompatActivity {
                 params.putString("name", userName);
                 intent.putExtras(params);
                 startActivity(intent);
+                Log.v(TAG, "Clicou em voltar");
             }
         };
     }
