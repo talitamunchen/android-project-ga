@@ -9,8 +9,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
-    public static final String SAMPLE_USER = "user";
-    public static final String SAMPLE_PASS = "pass";
+    public static final String SAMPLE_USER = "joao";
+    public static final String SAMPLE_PASS = "123";
 
     private TextView txUserName;
     private TextView txUserPass;
