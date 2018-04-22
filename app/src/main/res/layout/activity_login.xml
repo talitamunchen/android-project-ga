@@ -54,11 +54,11 @@
             android:padding="12dp"
             android:text="@string/login"/>
 
-        <TextView android:id="@+id/link_signup"
+        <TextView android:id="@+id/link_reset_pass"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            android:text="@string/noaccount"
+            android:text="Esqueceu a senha? Resete aqui!"
             android:gravity="center"
             android:textSize="16dip"/>
 

@@ -14,6 +14,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private TextView txUserName;
     private TextView txUserPass;
+    private TextView resetPass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +27,19 @@ public class LoginActivity extends AppCompatActivity {
         this.txUserName = findViewById(R.id.input_name);
         this.txUserPass = findViewById(R.id.input_password);
 
-        //View singup = findViewById(R.id.link_signup);
-        //singup.setOnClickListener(onClickSingup());
+        this.resetPass = findViewById(R.id.link_reset_pass);
+        resetPass.setOnClickListener(onClickResetPass());
 
+    }
+
+    private View.OnClickListener onClickResetPass() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, ResetPassActivity.class);
+                startActivity(intent);
+            }
+        };
     }
 
     private View.OnClickListener onClickLogin() {
@@ -49,18 +60,5 @@ public class LoginActivity extends AppCompatActivity {
             }
         };
     }
-
-    /*private View.OnClickListener onClickSingup() {
-        return new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), SingupActivity.class);
-                Bundle params = new Bundle();
-                params.putString("nome", "nome");
-                intent.putExtras(params);
-                startActivity(intent);
-            }
-        };
-    }*/
 
 }

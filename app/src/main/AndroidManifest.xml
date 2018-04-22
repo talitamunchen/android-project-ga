@@ -22,7 +22,7 @@
         <activity android:name=".SchedActivity">
 
         </activity>
-        <activity android:name=".SingupActivity">
+        <activity android:name=".ResetPassActivity">
 
         </activity>
         <activity android:name=".AddActivity">
