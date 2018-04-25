@@ -5,11 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 
 public class SchedActivity extends AppCompatActivity {
 
-    private LinearLayout btnBack;
+    private ImageView btnBack;
     private String userName;
 
     static final String TAG = SchedActivity.class.getName();

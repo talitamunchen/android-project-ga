@@ -6,13 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class AddpetActivity extends AppCompatActivity {
 
-    private LinearLayout btnBack;
+    private ImageView btnBack;
     private Button btnAddPet;
     private String userName;
 

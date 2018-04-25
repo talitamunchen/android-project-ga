@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/menu">
-    <item android:id="@+id/back"
-        android:title="@string/back"
-        android:icon="@drawable/back"/>
-    <item android:id="@+id/logout"
-        android:title="@string/logout"
-        android:icon="@drawable/logout" />
-</menu>

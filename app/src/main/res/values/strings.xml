@@ -17,8 +17,7 @@
     <string name="hist">Histórico de eventos</string>
     <string name="next">Próximos</string>
     <string name="addevent">Adicionar Evento</string>
-    <string name="desc">Descrição do app...</string> <!-- FIXME -->
-
+    <string name="desc"></string> <!-- FIXME -->
     <string name="agenda">Agenda</string>
     <string name="add">Adicionar</string>
     <string name="reminder1">30/04/2018 - Vacina</string>

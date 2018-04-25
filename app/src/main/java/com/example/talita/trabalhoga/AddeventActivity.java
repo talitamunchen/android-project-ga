@@ -6,13 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class AddeventActivity extends AppCompatActivity {
 
-    private LinearLayout btnBack;
+    private ImageView btnBack;
     private Button btnAddEvent;
     private String userName;
     private TextView txNameEvent;
@@ -40,7 +40,6 @@ public class AddeventActivity extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 if (txNameEvent.getText().toString().trim().length() == 0){
                     Toast.makeText(AddeventActivity.this, "Nome inválido!", Toast.LENGTH_LONG).show();
                     Log.v(TAG, "Não conseguiu adicionar evento: nome inválido");
@@ -53,7 +52,6 @@ public class AddeventActivity extends AppCompatActivity {
                     startActivity(intent);
                     Log.v(TAG, "Adicionou evento");
                 }
-
             }
         };
     }

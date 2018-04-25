@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -15,7 +16,7 @@ import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private LinearLayout btnLogout;
+    private ImageView btnLogout;
     private LinearLayout petOne;
     private LinearLayout petTwo;
     private Button btnAddPet;
