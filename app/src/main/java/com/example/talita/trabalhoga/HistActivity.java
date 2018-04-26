@@ -1,6 +1,7 @@
 package com.example.talita.trabalhoga;
 
 import android.content.Intent;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -29,7 +30,9 @@ public class HistActivity extends AppCompatActivity {
 
         this.btnBack = findViewById(R.id.btn_back);
         this.btnAddEvent = findViewById(R.id.btn_addevent2);
+
         this.hist = findViewById(R.id.hist);
+        hist.setPaintFlags(hist.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
         this.btnBack.setOnClickListener(onClicklBack());
         this.btnAddEvent.setOnClickListener(onClicklAddEvent());
@@ -59,7 +62,6 @@ public class HistActivity extends AppCompatActivity {
                 params.putString("name", userName);
                 intent.putExtras(params);
                 startActivity(intent);
-
                 Log.v(TAG, "Clicou no histórico");
             }
         };
