@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
-    public static final String SAMPLE_USER = "fulano";
+    public static final String SAMPLE_USER = "lucas";
     public static final String SAMPLE_PASS = "123";
 
     static final String TAG = LoginActivity.class.getName();

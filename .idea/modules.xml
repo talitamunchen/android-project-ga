@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/android-project-ga.iml" filepath="$PROJECT_DIR$/android-project-ga.iml" />
+      <module fileurl="file://C:\Users\Talita\AndroidStudioProjects\trabalhoGA\android-project-ga.iml" filepath="C:\Users\Talita\AndroidStudioProjects\trabalhoGA\android-project-ga.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../Siqueira/Documents/android-project-ga/trabalhoGA.iml" filepath="$PROJECT_DIR$/../../../Siqueira/Documents/android-project-ga/trabalhoGA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trabalhoGA.iml" filepath="$PROJECT_DIR$/trabalhoGA.iml" />
+      <module fileurl="file://C:\Users\Siqueira\Documents\android-project-ga\trabalhoGA.iml" filepath="C:\Users\Siqueira\Documents\android-project-ga\trabalhoGA.iml" />
     </modules>
   </component>
 </project>

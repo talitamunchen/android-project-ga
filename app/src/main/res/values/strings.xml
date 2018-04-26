@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">PetLovers</string>
-    <string name="welcome">Bem vindo, João!</string>
+    <string name="welcome">Bem vindo, Lucas!</string>
+    <string name="resume">Use este espaço para anotar tudinho sobre o seu pet. Configure lembretes sobre todos os eventos e datas importantes do seu fofinho.</string>
     <string name="name">Nome</string>
     <string name="senha">Senha</string>
     <string name="login">Login</string>
     <string name="resetpass">Esqueceu a senha? Resete aqui!</string>
     <string name="reset">Resetar senha</string>
-    <string name="backlogin">Retornar para Login</string>
+    <string name="backlogin">Retornar para Login.</string>
     <string name="email">Email</string>
     <string name="pets">Pets cadastrados:</string>
     <string name="petname1">Snow</string>
