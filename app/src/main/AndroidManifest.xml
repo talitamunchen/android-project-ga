@@ -9,31 +9,26 @@
         android:roundIcon="@mipmap/ic_vet_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SchedActivity">
-
-        </activity>
-        <activity android:name=".ResetPassActivity">
-
-        </activity>
-        <activity android:name=".HistActivity">
-
-        </activity>
-        <activity android:name=".AddpetActivity">
-
-        </activity>
-        <activity android:name=".AddeventActivity">
-
-        </activity>
-        <activity android:name=".HomeActivity">
-
-        </activity>
+        <activity android:name=".SchedActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ResetPassActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".HistActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".AddpetActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".AddeventActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".HomeActivity"
+            android:screenOrientation="portrait"></activity>
 
     </application>
 
