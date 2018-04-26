@@ -109,6 +109,14 @@
             </TableLayout>
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/hist"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="@string/hist"
+            android:textColor="@color/primary_dark" />
+
         <Button
             android:id="@+id/btn_addevent2"
             android:layout_width="150dp"

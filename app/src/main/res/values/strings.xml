@@ -15,7 +15,7 @@
     <string name="addpet">Adicionar Pet</string>
     <string name="logout">Sair</string>
     <string name="back">Voltar</string>
-    <string name="hist">Histórico de eventos</string>
+    <string name="hist">Visuaizar histórico</string>
     <string name="next">Próximos</string>
     <string name="addevent">Adicionar Evento</string>
     <string name="desc"></string> <!-- FIXME -->

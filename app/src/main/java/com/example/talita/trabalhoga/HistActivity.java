@@ -7,14 +7,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class HistActivity extends AppCompatActivity {
 
     private ImageView btnBack;
-    private LinearLayout btnHist;
     private Button btnAddEvent;
     private String userName;
+    private TextView hist;
 
     static final String TAG = HistActivity.class.getName();
 
@@ -28,12 +28,12 @@ public class HistActivity extends AppCompatActivity {
         userName = args.getString("name");
 
         this.btnBack = findViewById(R.id.btn_back);
-//        this.btnHist = findViewById(R.id.btn_hist);
         this.btnAddEvent = findViewById(R.id.btn_addevent2);
+        this.hist = findViewById(R.id.hist);
 
         this.btnBack.setOnClickListener(onClicklBack());
-//        this.btnHist.setOnClickListener(onClicklHist());
         this.btnAddEvent.setOnClickListener(onClicklAddEvent());
+        this.hist.setOnClickListener(onClicklHist());
     }
 
     private View.OnClickListener onClicklAddEvent() {
@@ -59,6 +59,7 @@ public class HistActivity extends AppCompatActivity {
                 params.putString("name", userName);
                 intent.putExtras(params);
                 startActivity(intent);
+
                 Log.v(TAG, "Clicou no histórico");
             }
         };
