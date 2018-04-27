@@ -33,7 +33,8 @@
             android:gravity="center"
             android:text="@string/petname1"
             android:textColor="@color/white"
-            android:textSize="28dp" />
+            android:textSize="28dp"
+            android:fontFamily="casual"/>
     </LinearLayout>
 
     <LinearLayout
@@ -69,7 +70,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:hint="@string/inputeventname"
-                            android:inputType="text" />
+                            android:inputType="text"
+                            android:fontFamily="casual"/>
                     </android.support.design.widget.TextInputLayout>
                 </TableRow>
 
@@ -88,7 +90,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:hint="@string/inputeventlocalname"
-                            android:inputType="text" />
+                            android:inputType="text"
+                            android:fontFamily="casual"/>
                     </android.support.design.widget.TextInputLayout>
                 </TableRow>
 
@@ -107,7 +110,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:hint="@string/inputeventdesc"
-                            android:inputType="text" />
+                            android:inputType="text"
+                            android:fontFamily="casual"/>
                     </android.support.design.widget.TextInputLayout>
                 </TableRow>
 
@@ -127,7 +131,8 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:hint="@string/inputeventdate"
-                            android:inputType="text" />
+                            android:inputType="text"
+                            android:fontFamily="casual"/>
                     </android.support.design.widget.TextInputLayout>
                 </TableRow>
 
@@ -150,7 +155,8 @@
             android:layout_gravity="center"
             android:layout_marginBottom="17dp"
             android:padding="20dp"
-            android:text="@string/add" />
+            android:text="@string/add"
+            android:fontFamily="casual"/>
     </LinearLayout>
 
     <LinearLayout

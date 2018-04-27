@@ -33,7 +33,8 @@
             android:gravity="center"
             android:text="@string/petname1"
             android:textColor="@color/white"
-            android:textSize="28dp" />
+            android:textSize="28dp"
+            android:fontFamily="casual"/>
     </LinearLayout>
 
     <LinearLayout
@@ -50,7 +51,8 @@
             android:padding="10dp"
             android:text="@string/before"
             android:textColor="@color/red"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:fontFamily="casual"/>
 
         <TableLayout
             android:layout_width="match_parent"
@@ -76,7 +78,8 @@
                     android:padding="18dip"
                     android:text="@string/birthday"
                     android:textColor="#000"
-                    android:textSize="19dp" />
+                    android:textSize="19dp"
+                    android:fontFamily="casual"/>
             </TableRow>
         </TableLayout>
     </LinearLayout>

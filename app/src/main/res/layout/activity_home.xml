@@ -28,7 +28,8 @@
             android:gravity="center"
             android:text="@string/welcome"
             android:textColor="@color/white"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:fontFamily="casual"/>
 
         <TextView
             android:layout_width="300dp"
@@ -38,7 +39,8 @@
             android:text="@string/resume"
             android:textColor="@color/white"
             android:textSize="15dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:fontFamily="casual"/>
 
     </LinearLayout>
 
@@ -62,7 +64,8 @@
                 android:text="@string/pets"
                 android:textAlignment="viewStart"
                 android:textColor="@color/black"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:fontFamily="casual"/>
 
             <LinearLayout
                 android:id="@+id/petOne"
@@ -85,7 +88,8 @@
                     android:paddingLeft="15dp"
                     android:text="@string/petname1"
                     android:textColor="@color/black"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp"
+                    android:fontFamily="casual"/>
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -123,7 +127,8 @@
                     android:paddingLeft="15dp"
                     android:text="@string/petname2"
                     android:textColor="@color/black"
-                    android:textSize="18dp"/>
+                    android:textSize="18dp"
+                    android:fontFamily="casual"/>
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -147,7 +152,8 @@
             android:layout_gravity="center"
             android:layout_marginBottom="17dp"
             android:padding="20dp"
-            android:text="@string/addpet" />
+            android:text="@string/addpet"
+            android:fontFamily="casual"/>
     </LinearLayout>
 
     <LinearLayout
